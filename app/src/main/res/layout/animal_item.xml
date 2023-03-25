@@ -1,0 +1,44 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activity.MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="20dp"
+        android:id="@+id/materialcardview_recyclerview"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/image_recyclerview"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/materialcardview_recyclerview"
+        app:layout_constraintTop_toTopOf="@+id/materialcardview_recyclerview" />
+
+    <TextView
+        android:id="@+id/textview_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text_here"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:elevation="1dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialcardview_recyclerview"
+        app:layout_constraintStart_toEndOf="@+id/image_recyclerview"
+        app:layout_constraintTop_toTopOf="@+id/image_recyclerview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
